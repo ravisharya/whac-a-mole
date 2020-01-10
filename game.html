@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WHACK A MOLE</title>
+<link rel="stylesheet" href="game.css">
+<script src="game.js"></script>
+</head>
+<body>
+<section id="formbox">
+<h1>Please enter details to create the game</h1>
+<form name="userInput"  >
+Dimension of grid:
+<input type="number" min="2" max="20" step="1" name="dimension" id="dimension" required>
+<p>Number of squares to be colored randomly:
+<input type="number" min="1" max="20" step="1" id="numberOfColors" required>
+<p>Number of seconds to finish the game:
+<input type="number" min="1" max="10" step="1"  name="timeToWin" id="timeToWin" required>
+<p>Total number of attempts to try in a row:
+<input type="number" min="1" max="10" step="1"  name="totalAttempts" id="totalAttempts" required>
+<p><input type="button" id="button" value="submit">
+<input type="submit" id="reset" value="reset">
+</form>
+</section>
+<section id="databox"><h1>Welcome to WHACK A MOLE</h1></section>
+</body>
+</html>
